@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+html {
+	font-size: 14px;
+}
+
+body{
+	background-color: #fff;
+	color: #2C3300;
+	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+p{
+	line-height: 2rem;
+}
+
+a{
+	color: #b9d400;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+	color: #b9d400;
+}
+
+span{
+	display: inline-block;
+}
+
+img {
+	width: 100%;
+}
+
+img[src$=".svg"]{
+	width: 100%;
+}
+
+@-ms-viewport {
+	width: auto;
+}
+
+.inner {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+.inner900 {
+	max-width: 900px;
+}
+.inner700 {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.btn {
+    background: #b9d400;
+    color: #fff;
+    border-radius: 25px;
+    padding: 1.25rem 1rem;
+    display: block;
+	width: 200px;
+	margin: 0 auto 2rem;
+	border: 0;
+}
+.btnWH {
+    color: #b9d400;
+    border: 2px solid #b9d400;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+}
+.btnWH:hover {
+	background: #b9d400;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* <header>
+------------------------------------------------------------ */
+header{
+	padding: 1rem 0;
+	background: #fff;
+	opacity: 0.95;
+    margin: 0 auto;
+}
+
+#MainCom p {
+	margin-bottom: 0;
+	font-size: .9rem;
+	line-height: .9rem;
+	color: #b9d400;
+}
+
+header div.headerLogo h1{
+	margin: 0;
+}
+
+header div.headerLogo img{
+	width: 80%;
+}
+
+header nav{
+	font-weight: bold;
+}
+
+header nav ul{
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    width: 70%;
+    margin-bottom: 0;
+}
+
+header nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+header nav ul li a{
+	display: block;
+	padding: 1rem 0;
+}
+
+header nav ul li a span{
+	font-weight: normal;
+	color: #B9D400;
+	font-size: .7rem;
+}
+
+header nav ul li a:link {color: #2C3300; text-decoration:none;}
+header nav ul li a:visited {color: #2C3300; text-decoration:none;}
+header nav ul li a:active {color: #2C3300; text-decoration:none;}
+header nav ul li a:hover {background: #F4F4F4; color:#B9D400; text-decoration:none;}
+
+@media screen and (max-width: 768px) {
+
+	header nav ul {
+		width: 100%;
+	}
+
+	header div#headerSPNavi{
+		display: none;
+	}
+
+	header div#headerSPMenu{
+		padding: 15px 10px 0 0;
+		text-align: right;
+		font-size: 1.25em;
+	}
+
+	header div#headerSPMenu span{
+		border: 1px #ccc solid;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	header div#headerSPNavi{
+		padding: 0;
+		margin: 0;
+	}
+
+	header div#headerSPNavi nav ul{
+		margin: 0;
+	}
+
+	header div#headerSPNavi nav ul li{
+		float: none;
+		height: auto;
+		position: relative;
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		border-right: 0;
+		border-top: 1px #ccc solid;
+	}
+	
+	header div#headerSPNavi nav ul li:first-child{
+		border: 0;
+	}
+
+	header div#headerSPNavi nav ul li a{
+		display: inline;
+		position: static;
+		top: 0;
+		left: 0;
+		width: auto;
+		height: auto;
+	}
+
+	header div#headerSPNavi nav ul li a span{
+		padding: 0.75em;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	header {
+		padding: .5rem 0 0;
+	}
+	header div.headerLogo h1{
+		line-height: 1rem;
+	}
+	header div.headerLogo img{
+		width: 30%;
+	}
+	#headerSPMenu i	{
+	    font-size: 2rem;
+	    position: relative;
+	    bottom: .5rem;
+	}
+	header #headerSPNavi nav ul li a span {
+		color: #2C3300;
+	}
+}
+
+
+
+/* <footer>
+------------------------------ */
+footer{
+	background: #F9F9F8;
+	padding-top: 4rem;
+	overflow: hidden;
+	margin-top: -10px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+}
+
+footer ul li a {
+	color: #2C3300;
+}
+
+.footerContact p {
+    line-height: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+.footerContactTel {
+	position: relative;
+}
+.footerContactTel:before {
+	content:"";
+	background-image: url(../img/icon_tel.png);
+	background-repeat: no-repeat;
+	width: 4rem;
+	height: 4rem;
+	margin-right: .5rem;
+	display: inline-block;
+}
+.footerContactTelNum, 
+.footerContactTelTime {
+	position: absolute;
+	top: 5px;
+    left: 5rem;
+}
+.footerContactTelNum {
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+.footerContactTelTime {
+	top: auto;
+	bottom: -24px;
+}
+.footerLogo {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.footerLogo img {
+	width: auto
+}
+
+.footerCopyright {
+	text-align: center;
+	background: #2C3300;
+	color: #fff;
+}
+.footerCopyright p {
+	margin-bottom: 0;
+}
+@media screen and (max-width: 768px){
+	footer {
+		padding-top: 1rem;
+	}
+	.footerContact p {
+		margin-bottom: 1rem;
+	}
+	.footerContactTelTime {
+		bottom: -10px;
+	}
+	footer .btn {
+		margin: 1rem 0 0 1rem;
+	}
+}
+@media screen and (max-width: 414px){
+	.footerMenu {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	footer .btn {
+		margin: 1rem auto;
+	}
+	.footerLogo {
+		margin-top: 0;
+	}
+	.footerCopyright p {
+		font-size: .7rem;
+	}
+}
