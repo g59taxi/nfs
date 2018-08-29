@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.mainVisual{
+	text-align: center;
+	padding: 35px 0;
+	background-color: rgba(184, 212, 0, 0.2);
+}
+
+.mainVisual h2{
+	font-size: 3rem;
+	font-weight: bold;
+	color: #b9d400;
+}
+
+.mainVisual span{
+	font-size: 0.9rem;
+}
