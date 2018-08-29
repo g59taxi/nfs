@@ -213,3 +213,7 @@
 		text-align: justify;
 	}
 }
+
+#topFooter{
+	margin-top: -10px;
+}
