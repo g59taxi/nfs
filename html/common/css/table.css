@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 .tblBasic{
-  width: 700px;
   margin: 0 auto;
+  width: 700px;
 }
 
 .tblBasic th,
@@ -12,9 +12,31 @@
 
 .tblBasic th{
   border-bottom: 3px solid #b9d400;
-  min-width: 140px;
+	  min-width: 140px;
 }
 
 .tblBasic td{
   border-bottom: 1px solid #ccc;
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+  .tblBasic{
+	width: 100%;
+	max-width: 700px;
+  }
+  .tblBasic th{
+    min-width: 100px;
+  }
+}
+/* SP */
+@media screen and (max-width: 414px){
+  .tblBasic th{
+    border-bottom: 1px solid #eee;
+    display: block;
+  }
+  .tblBasic td{
+    border-bottom: 1px solid #b9d400;
+    display: block;
+  }
 }
