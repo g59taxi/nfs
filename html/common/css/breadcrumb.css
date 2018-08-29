@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.breadcrumb{
+
+}
+
+.breadcrumb ul{
+
+}
+
+.breadcrumb ul li{
+  display: inline-block;
+}
+
+.breadcrumb ul li a{
+  color: #b9d400;
+  position: relative;
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.breadcrumb ul li a:after{
+  content: "／";
+  position: absolute;
+  right: 0;
+}
